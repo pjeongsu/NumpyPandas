@@ -1,0 +1,121 @@
+<div class="container-float">
+
+  <div class="main-content">
+    <h2 class="main-title">당신의 정보를 입력해주세요!</h2>
+
+    <form id="clas_form" method="POST">
+      <div>
+        <p>
+          <label>성별 :</label>  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;
+          <select name="gender" style= "width:90px">
+            <option value="남성">남자</option>
+            <option value="여성">여자</option>
+          </select> &nbsp; &nbsp;  &nbsp;
+
+          <label> 전공 :</label> &nbsp;  &nbsp;  &nbsp;
+          <select name="major" style= "width:90px">
+            <option value="공학">공학</option>
+            <option value="인문학">인문학</option>
+            <option value="경영학">경영학</option>
+            <option value="예술">예술</option>
+            <option value="기타 전공">기타전공</option>
+            <option value="전공 없음">전공없음</option>
+          </select> &nbsp; &nbsp;
+
+          <label> 최종학력  :</label>  &nbsp;   &nbsp;
+          <select name="edu_lev" style= "width:90px">
+            <option value="학사">학사</option>
+            <option value="고졸">고졸</option>
+            <option value="석사">석사</option>
+            <option value="박사">박사</option>
+            <option value="초졸">초졸</option>
+          </select> &nbsp; &nbsp;
+
+          <label> 대학등록여부 :</label>  &nbsp;
+          <select name="en_uni" style= "width:90px">
+            <option value="무등록">무등록</option>
+            <option value="정규">정규</option>
+            <option value="시간제">시간제</option>
+          </select> &nbsp; &nbsp;
+
+          <br>
+          <label> 관련경험 :</label>  &nbsp;
+          <select name="re_exp" style= "width:100px">
+            <option value="관련 경험 있음">경험 있음</option>
+            <option value="관련 경험 없음">경험 없음</option>
+          </select>
+          &nbsp; &nbsp;
+
+          <label> 공백기 :</label>  &nbsp;
+          <select name="last" style= "width:90px">
+            <option value="0">1년 미만</option>
+            <option value="1">1년</option>
+            <option value="2">2년</option>
+            <option value="3">3년</option>
+            <option value="4">4년</option>
+            <option value="5">4년 이상</option>
+          </select> &nbsp; &nbsp;
+
+        <label> 회사 유형 :</label>  &nbsp;
+        <select name="comp_type" style= "width:90px">
+          <option value="신입">신입</option>
+          <option value="공공기관">공공기관</option>
+          <option value="유한책임회사">유한책임회사</option>
+          <option value="신생 스타트업">신생 스타트업</option>
+          <option value="비정부기구">비정부기구</option>
+          <option value="투자받은 스타트업">투자 스타트업</option>
+          <option value="기타">기타</option>
+        </select> &nbsp; &nbsp;
+
+        <label> 회사 규모 :</label>  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;
+        <select name="comp_size" style= "width:90px">
+          <option value='0'>신입</option>
+          <option value='<10'>10명미만</option>
+          <option value='10/49'>10~49</option>
+          <option value='50-99'>50~99</option>
+          <option value='100-500'>100~499</option>
+          <option value='500-999'>500~999</option>
+          <option value='1000-4999'>1000~4999</option>
+          <option value='5000-9999'>5000~9999</option>
+          <option value='10000+'>10000명이상</option>
+        </select>
+        <br>
+
+        <label> 훈련시간 :</label>  &nbsp;
+        <input type="text" class="training" name="training" value="0" min="0" size=7>  &nbsp;  &nbsp;
+
+        <label> 본인업무경력 :</label>  &nbsp;
+        <input type="text" class="exp" name="exp" value="0" min="0" max="21" size=7>  &nbsp;  &nbsp;
+
+        <input type="checkbox" id='city' name='city' value=0.84> 도시
+
+
+        <br>
+        <br>
+        <button type='submit' class="btn btn-primary" style="width:150px; height:40px">입력</button>
+
+      </div>
+      <br>
+
+    </form>
+
+  </div>
+
+
+  <div class="side-content">
+    <div class="latest-news infos">
+      <h2 class="infos-title">데이터 사이언티스트로 이직,취업 가능성</h2>
+      
+      <li>{{pred}}%</li>
+
+
+
+
+    </div>
+
+
+  </div>
+
+
+
+</div>
